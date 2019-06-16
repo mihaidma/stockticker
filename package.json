@@ -10,7 +10,8 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "start": "node lib/index.js",
-    "test": "lab -v -c --leaks ./test"
+    "test:full": "lab -v -c --leaks ./test",
+    "test": "lab -v -c --leaks ./test/unit"
   },
   "repository": {
     "type": "git",
