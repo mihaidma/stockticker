@@ -9,8 +9,10 @@
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "start": "node lib/index.js",
+    "start": "node lib/index.js | pino-colada",
+    "start:raw": "node lib/index.js",
     "test:full": "lab -v -c --leaks ./test",
+    "client": "node ./scripts/client.js",
     "test": "lab -v -c --leaks ./test/unit"
   },
   "repository": {
@@ -34,7 +36,8 @@
     "@hapi/nes": "^11.2.0",
     "hapi-pino": "^6.0.1",
     "husky": "^2.4.1",
-    "pino": "^5.12.6"
+    "pino": "^5.12.6",
+    "ws": "^7.0.1"
   },
   "devDependencies": {
     "@hapi/code": "^5.3.1",
@@ -45,7 +48,8 @@
     "eslint-plugin-import": "^2.17.3",
     "eslint-plugin-node": "^9.1.0",
     "eslint-plugin-promise": "^4.1.1",
-    "eslint-plugin-standard": "^4.0.0"
+    "eslint-plugin-standard": "^4.0.0",
+    "pino-colada": "^1.4.4"
   },
   "husky": {
     "hooks": {

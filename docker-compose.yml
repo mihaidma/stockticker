@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  ticker:
+    build: .
+    ports:
+      - 8800:8800

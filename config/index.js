@@ -8,6 +8,7 @@ const {
 let config = {
   host: HOST,
   port: PORT,
+  feed: 'wss://ws.kraken.com/',
   db: {
   },
   test: {
