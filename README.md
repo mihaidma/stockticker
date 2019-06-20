@@ -5,6 +5,7 @@ Dockerised Node.js rest service that returns stock ticker prices from a stock ex
 ## Start the service
 
 Start the service on local:
+
 - Raw output:
 ```
 npm run start:raw
@@ -25,7 +26,8 @@ docker-compose up -d
 ```
 npm test
 ```
-- Run all tests including integraion tests. The service must be running at the time when the tests are launched:
+
+- Run all tests including integration tests. The service must be running at the time when the tests are launched:
 ```
 npm run test:full
 ```

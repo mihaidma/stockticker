@@ -5,7 +5,7 @@ const {
   PORT = 8800
 } = process.env
 
-let config = {
+const config = {
   host: HOST,
   port: PORT,
   feed: 'wss://ws.kraken.com/',

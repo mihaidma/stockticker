@@ -12,7 +12,7 @@
     "start": "node lib/index.js | pino-colada",
     "start:raw": "node lib/index.js",
     "test:full": "lab -v -c --leaks ./test",
-    "client": "node ./scripts/client.js",
+    "client": "node ./scripts/client.js | pino-colada",
     "test": "lab -v -c --leaks ./test/unit"
   },
   "repository": {
@@ -42,6 +42,7 @@
   "devDependencies": {
     "@hapi/code": "^5.3.1",
     "@hapi/lab": "^19.1.0",
+    "@hapi/teamwork": "^3.3.1",
     "dotenv": "^8.0.0",
     "eslint": "^5.16.0",
     "eslint-config-standard": "^12.0.0",
