@@ -31,3 +31,9 @@ npm test
 ```
 npm run test:full
 ```
+
+## TODO
+
+- Extract the `./scripts/feeder.js` as a separate service and use a pubsub service like Redis to communicate with the ticker service
+- Enhance the WebSocket error handling: wrapping in try catch, check heartbeat for silent failure, handle the onError callback, check the error flag provided by send
+- Add Joi validation on config
