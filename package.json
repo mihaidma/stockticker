@@ -37,7 +37,7 @@
     "hapi-pino": "^6.0.1",
     "husky": "^2.4.1",
     "pino": "^5.12.6",
-    "ws": "^7.0.1"
+    "ws": "^7.4.6"
   },
   "devDependencies": {
     "@hapi/code": "^5.3.1",
